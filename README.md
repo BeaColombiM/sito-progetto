@@ -1,9 +1,5 @@
 # sito-progetto
-<<<<<<< HEAD
-ciaoneee
-progetto
-=======
-ciaonw
-progetto
-ehehdgdghdhd
->>>>>>> e79176f1a953aa98dd261f4e55cd5c67ee2ee36a
+# sfondo (da cercare o creare con chat harry potter)
+# foto per anno (menù) tipo quelle in basso a destra netflix
+# foto green screen (ritagliate sfondo trasparente personaggi)
+# info per 7 principali personaggi nei film (chat wikipedia)
