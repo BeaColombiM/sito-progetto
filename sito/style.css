@@ -1,5 +1,13 @@
 .img-ress{width: 100%; height: auto;}
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
 
+.dimcop{
+    width: 120px;
+    height: 180px;
+  }
 .container{
     padding: 15px; 
     max-width: 1300px; 
@@ -17,7 +25,8 @@
    box-sizing: border-box;
 }
 
-.cover__content h1,p{
-    color:yellow;
+.cover__content h1,h2,p{
+    color:white;
     margin:0;
 }
+
