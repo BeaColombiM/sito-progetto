@@ -1,0 +1,23 @@
+.img-ress{width: 100%; height: auto;}
+
+.container{
+    padding: 15px; 
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+
+.cover{position:relative; border-bottom: 10px;}
+
+.cover__content{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.cover__content h1,p{
+    color:yellow;
+    margin:0;
+}
