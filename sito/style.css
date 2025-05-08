@@ -3,12 +3,18 @@
   padding:0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'Harry P';
   src: url('../foto/HARRYP.TTF') format('truetype');
 }
 
-body {
+body{
+  font-family: Arial, sans-serif;
+  color:black;
+}
+
+h1{
   font-family: 'Harry P', sans-serif;
 }
 
@@ -43,8 +49,7 @@ html, body{width: 100%; height: 100%;}
 }
 
 .cover__content h1,h2,p{
-  color:white;
-  margin:0;
+  color:black;
 }
 
 /* immagine dei link in alto sotto al titolo e non su tutto lo schermo */
@@ -83,7 +88,6 @@ html, body{width: 100%; height: 100%;}
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 .boh{
   width: 200px;
   height: 300px;
@@ -128,7 +132,3 @@ html, body{width: 100%; height: 100%;}
         -moz-box-sizing: border-box;
             box-sizing: border-box;
 }  
-=======
-
-
->>>>>>> 0f4593cad5e84340e8400f5be8eb2d21297b905d
