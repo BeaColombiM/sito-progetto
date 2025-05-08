@@ -3,6 +3,14 @@
   padding:0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Harry P';
+  src: url('../foto/HARRYP.TTF') format('truetype');
+}
+
+body {
+  font-family: 'Harry P', sans-serif;
+}
 
 html, body{width: 100%; height: 100%;}
 /* toglie i margini di default che vanno rimossi */
@@ -44,7 +52,7 @@ html, body{width: 100%; height: 100%;}
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 /* menu immagini che scorrono: */
@@ -53,6 +61,7 @@ html, body{width: 100%; height: 100%;}
   height: 600px;
   position: relative;
   overflow: hidden;
+  bottom: 0;
 }
 
 
@@ -62,7 +71,7 @@ html, body{width: 100%; height: 100%;}
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease; /* Smooth zoom effect */
+  transition: transform 0.001 ease; /* Smooth zoom effect */
 }
 
 
@@ -72,11 +81,7 @@ html, body{width: 100%; height: 100%;}
   max-height: 70vh;
   object-fit: contain;
   border-radius: 10px;
-
-
 }
 
-.boh{
-  width: 200px;
-  height: 300px;
-}
+
+
