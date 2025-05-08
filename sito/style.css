@@ -80,3 +80,43 @@ html, body{width: 100%; height: 100%;}
   width: 200px;
   height: 300px;
 }
+
+/* per tasti home */
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: rgb(32, 37, 83);
+  padding: 15px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* z-index:Questo garantisce che la barra con il link resti sopra a tutte le immagini e contenuti sotto, anche se questi scorrono. */
+
+.bottone{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.contenuto_pagina{
+  padding-top: 80px;
+  text-align: center;
+}
+
+/* resetta il padding degli elementi applicando il padding degli elemnti all'interno degli elemneti e non all'esterno, così gli elementi non si sovrapoongono */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}  
