@@ -18,6 +18,29 @@ h1{
   font-family: 'Harry P', sans-serif;
 }
 
+h2{text-align: left; margin: 40px 5% 20px }
+
+.contenuto_trama{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: start;
+  margin: 0 5% 40px;
+}
+
+.contenuto_trama img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.contenuto_trama p{
+  text-align: left;
+  margin: 0;
+}
+
+
 html, body{width: 100%; height: 100%;}
 /* toglie i margini di default che vanno rimossi */
 
@@ -82,7 +105,7 @@ html, body{width: 100%; height: 100%;}
 
 .carousel-cell img{
   width: 200px;
-  height: 300px;
+  height: 600px;
   max-height: 70vh;
   object-fit: contain;
   border-radius: 10px;
