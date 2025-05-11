@@ -3,14 +3,21 @@
   padding:0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'Harry P';
   src: url('../foto/HARRYP.TTF') format('truetype');
 }
 
-body {
+body{
+  font-family: Arial, sans-serif;
+  color:black;
+}
+
+h1{
   font-family: 'Harry P', sans-serif;
 }
+
 
 html, body{width: 100%; height: 100%;}
 /* toglie i margini di default che vanno rimossi */
@@ -43,8 +50,7 @@ html, body{width: 100%; height: 100%;}
 }
 
 .cover__content h1,h2,p{
-  color:white;
-  margin:0;
+  color:black;
 }
 
 /* immagine dei link in alto sotto al titolo e non su tutto lo schermo */
@@ -77,11 +83,19 @@ html, body{width: 100%; height: 100%;}
 
 .carousel-cell img{
   width: 200px;
-  height: 300px;
+  height: 600px;
   max-height: 70vh;
   object-fit: contain;
   border-radius: 10px;
 }
 
+/* z-index:Questo garantisce che la barra con il link resti sopra a tutte le immagini e contenuti sotto, anche se questi scorrono. */
 
-
+/* resetta il padding degli elementi applicando il padding degli elemnti all'interno degli elemneti e non all'esterno, così gli elementi non si sovrapoongono */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}  

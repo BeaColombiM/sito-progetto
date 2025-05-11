@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottone{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.pagina {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pagina::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
+  z-index: 2; 
+  pointer-events: none;
+}
+
+.img-ress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  color:black;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(83, 146, 89);
+  /* colore provvisorio scelto a caso,mi faceva cagare bianco :)  se vuoi cambialo*/
+}
+
+.contenuto_pagina{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 20px;
+  z-index: 2; 
+  text-align: center;
+}
+
+.contenuto_pagina h1{
+   font-family: 'Harry P', sans-serif;
+   font-size: 3em;
+   color: white;
+}
+
+.trama{
+  margin: 40px auto; 
+  padding: 0 20px;
+}
+
+.trama h2{
+  font-size: 2em;
+  color: black;
+}
+
+.contenuto_trama{
+  display: flex;
+  align-items: stretch; 
+  gap: 20px;               
+  margin-top: 20px;
+}
+
+.img-trama{
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testo{
+    flex:1;
+    height: 100%;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personaggi{
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+.personaggi h2{
+    font-size: 2em;
+    color: black;
+}
