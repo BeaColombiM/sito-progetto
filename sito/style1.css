@@ -118,11 +118,6 @@
     font-size: 2em;
     color: black;
 }
-
-.sizeimmagini{
-    width: 292px;
-    height: 371px;
-}
 @font-face {
   font-family: 'Harry P';
   src: url('../foto/HARRYP.TTF') format('truetype');
@@ -139,4 +134,24 @@ body {
   width: 330px;
   height: 500px;
   object-fit: cover;
+}
+.sizeimmagini {
+  width: 292px;
+  height: 371px;
+  transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
+}
+
+.sizeimmagini:hover {
+  transform: scale(1.1); /* Ingrandisce l'immagine al 110% */
+}
+.contenuto_personaggi {
+  display: flex;
+  justify-content: space-around; /* Allinea le immagini orizzontalmente */
+  gap: 20px;
+}
+
+.sizeimmagini {
+  width: 292px;
+  height: 371px;
+  transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
 }
