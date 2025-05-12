@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.header a{
+  font-family: 'Harry P', sans-serif;
+  font-size: 2em;
+  color: yellow;
+}
+
 .bottone{
   color: yellow;
   text-decoration: none;
