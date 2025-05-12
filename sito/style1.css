@@ -135,6 +135,14 @@ body {
   height: 500px;
   object-fit: cover;
 }
+.hermione_actor{
+  width: 292px;
+  height: 400px;
+}
+.ron_actor{
+  width: 290px;
+  height: 410px;
+}
 .sizeimmagini {
   width: 292px;
   height: 371px;
