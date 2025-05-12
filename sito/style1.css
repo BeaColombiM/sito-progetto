@@ -16,10 +16,15 @@
   background-color: black;
 }
 
-/* .logo img{
-  width: 100%;
-  height: 100%;
-} */
+.logo img{
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+
+.img-logo{
+  height: 80px;
+}
 
 .header a{
   font-family: 'Harry P', sans-serif;
@@ -42,19 +47,27 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .pagina::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0; 
   left: 0;
   width: 100%;
-  height: 50%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
-  z-index: 2; 
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); 
+  z-index: 2;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .pagina::after {
+    height: 70%; 
+  }
 }
 
 .img-ress {
@@ -62,63 +75,83 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9; 
   object-fit: cover;
   z-index: 1;
+  max-height: 100vh; 
 }
-
-
 
 .contenuto_pagina{
   position: absolute;
-  bottom: 0;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 3;
   width: 100%;
-  padding: 40px 20px;
-  z-index: 2; 
   text-align: center;
+  padding: 20px;
 }
 
-.contenuto_pagina h1{
-   font-family: 'Harry P', sans-serif;
-   font-size: 3em;
-   color: yellow;
-}
-
-.trama{
-  margin: 40px auto; 
-  padding: 0 20px;
+.contenuto_pagina h1 {
+  font-family: 'Harry P', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3em); 
+  color: yellow;
+  padding: clamp(10px, 4vw, 30px);
+  background: rgba(0, 0, 0, 0.4); 
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 90%;
+  word-wrap: break-word;
 }
 
 .trama h2{
-  font-size: 2em;
-  color: black;
+  font-family: 'Harry P', sans-serif;
+  font-size: 4em;
+  color: yellow;
+  margin-bottom: 10px;
 }
 
+
 .contenuto_trama{
-  font-size: 1.41em;
-  font-family: 'Harry P', sans-serif;
   display: flex;
-  align-items: stretch; 
-  gap: 20px;               
+  flex-direction: row;
+  align-items: stretch;
+  gap: 20px;
   margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  border-radius: 10px;
+  min-height:300px ;
+  height: auto;
 }
 
 .img-trama{
-  width: 500px;
-  height: 341px;
+  width:50%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .testo{
-    flex:1;
-    height: 100%;
-    font-size: 1.2em;
-    text-align: left;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
+
+.testo p{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif; 
+  font-size: 1em; 
+  color: yellow; 
+  line-height: 1.6; 
+  text-align: left;
+  margin:0;
+}
+
 
 .personaggi{
     margin: 40px auto; 
@@ -126,8 +159,9 @@
 }
 
 .personaggi h2{
-    font-size: 2em;
-    color: black;
+  font-family: 'Harry P', sans-serif;
+  font-size: 4em;
+  color: yellow;
 }
 @font-face {
   font-family: 'Harry P';
@@ -173,4 +207,10 @@ body {
   width: 292px;
   height: 371px;
   transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
+}
+
+@media (max-width: 600px) {
+  .contenuto_trama {
+    overflow-x: auto;
+  }
 }
