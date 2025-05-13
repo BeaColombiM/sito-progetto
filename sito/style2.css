@@ -159,15 +159,17 @@ body {
   background-color: black;
 }
 .harry_actor {
-  width: 330px;
-  height: 500px;
+  width: 200px;
+  height: 350px;
   object-fit: cover;
 }
+
 .sizeimmagini {
-  width: 292px;
+  width: 270px;
   height: 371px;
   transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
 }
+
 
 .sizeimmagini:hover {
   transform: scale(1.1); /* Ingrandisce l'immagine al 110% */
@@ -178,8 +180,3 @@ body {
   gap: 20px;
 }
 
-.sizeimmagini {
-  width: 292px;
-  height: 371px;
-  transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
-}
