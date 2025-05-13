@@ -116,6 +116,26 @@
     justify-content: center;
 }
 
+.trailer {
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.trailer h2 {
+    font-family: 'Harry P', sans-serif;
+    font-size: 2em;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.contenitore_trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .personaggi{
     margin: 40px auto; 
     padding: 0 20px;
@@ -154,12 +174,14 @@ body {
 }
 .contenuto_personaggi {
   display: flex;
-  justify-content: space-around; /* Allinea le immagini orizzontalmente */
+  flex-wrap: wrap;
+  justify-content: center; /* Allinea le immagini orizzontalmente */
   gap: 20px;
 }
 
 .sizeimmagini {
-  width: 292px;
-  height: 371px;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
   transition: transform 0.3s ease; /* Transizione per ingrandire l'immagine */
 }
