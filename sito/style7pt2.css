@@ -5,7 +5,6 @@
 }
 
 .header{
-  position: fixed;
   top:0;
   left:0;
   width: 100%;
@@ -85,8 +84,9 @@
 }
 
 .trama h2{
+  font-family: 'Harry P', sans-serif;
   font-size: 2em;
-  color: black;
+  color: yellow;
 }
 
 .contenuto_trama{
@@ -115,15 +115,36 @@
     justify-content: center;
 }
 
+.trailer {
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.trailer h2 {
+    font-family: 'Harry P', sans-serif;
+    font-size: 2em;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.contenitore_trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .personaggi{
     margin: 40px auto; 
     padding: 0 20px;
 }
 
 .personaggi h2{
-    font-size: 2em;
-    color: black;
+  font-family: 'Harry P', sans-serif;
+  font-size: 2em;
+  color: yellow;
 }
+
 @font-face {
   font-family: 'Harry P';
   src: url('../foto/HARRYP.TTF') format('truetype');
