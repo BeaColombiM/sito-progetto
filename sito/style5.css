@@ -215,76 +215,59 @@ body {
 .footer-links li a:hover {
   color: #FFD700; 
 }
-@media (max-width: 600px) {
-
-  .contenuto_pagina {
-    padding: 20px 10px;
-  }
-
-
-  .contenuto_pagina h1 {
-    font-size: 2em;
-  }
-
+@media screen and (max-width: 768px) {
 
   .contenuto_trama {
     flex-direction: column;
-    gap: 15px;
-    font-size: 1.1em;
+    align-items: center;
+    text-align: center;
   }
-
 
   .img-trama {
     width: 100%;
-    max-width: 320px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 0 20px 0;
   }
 
   .testo {
+    width: 100%;
     height: auto;
     font-size: 1em;
-    padding: 10px 0;
-    text-align: justify;
+    text-align: center;
+    display: block;
   }
 
-  .trailer {
-    margin: 20px 10px;
+  .contenitore_trailer {
+    flex-direction: column;
   }
 
+  .contenuto_personaggi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .bottone {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .contenuto_pagina h1,
+  .trama h2,
   .trailer h2,
   .personaggi h2 {
     font-size: 1.5em;
   }
 
-  .contenitore_trailer {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contenuto_personaggi {
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .sizeimmagini {
-    width: 200px;
+  .sizeimmagini,
+  .harry_actor,
+  .hagrid_actor,
+  .sirius_actor {
+    width: 90%;
     height: auto;
-  }
-
-  .harry_actor {
-    width: 220px;
-    height: auto;
-  }
-
-  .footer {
-    padding: 20px 10px;
-  }
-
-  .bottone {
-    font-size: 16px;
-    padding: 8px 15px;
   }
 }
