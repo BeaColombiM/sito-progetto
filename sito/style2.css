@@ -93,9 +93,7 @@
 .contenuto_trama{
   font-size: 1.41em;
   font-family: 'Harry P', sans-serif;
-  display: flex;
-  align-items: stretch; 
-  gap: 20px;               
+  overflow: auto;               
   margin-top: 20px;
 }
 
@@ -103,6 +101,8 @@
   width: 500px;
   height: 341px;
   object-fit: cover;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .testo{
@@ -211,4 +211,65 @@ body {
 
 .footer-links li a:hover {
   color: #FFD700; 
+}
+@media (max-width: 768px) {
+  .contenuto_trama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-trama {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+
+  .testo {
+    font-size: 1.1em;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .contenuto_personaggi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sizeimmagini {
+    width: 90%;
+    height: auto;
+  }
+
+  .contenuto_pagina h1 {
+    font-size: 2em;
+    padding: 0 10px;
+  }
+
+  .trama h2,
+  .trailer h2,
+  .personaggi h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .header a {
+    font-size: 1.5em;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
 }

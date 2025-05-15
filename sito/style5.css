@@ -215,3 +215,76 @@ body {
 .footer-links li a:hover {
   color: #FFD700; 
 }
+@media (max-width: 600px) {
+
+  .contenuto_pagina {
+    padding: 20px 10px;
+  }
+
+
+  .contenuto_pagina h1 {
+    font-size: 2em;
+  }
+
+
+  .contenuto_trama {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1em;
+  }
+
+
+  .img-trama {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .testo {
+    height: auto;
+    font-size: 1em;
+    padding: 10px 0;
+    text-align: justify;
+  }
+
+  .trailer {
+    margin: 20px 10px;
+  }
+
+  .trailer h2,
+  .personaggi h2 {
+    font-size: 1.5em;
+  }
+
+  .contenitore_trailer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contenuto_personaggi {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sizeimmagini {
+    width: 200px;
+    height: auto;
+  }
+
+  .harry_actor {
+    width: 220px;
+    height: auto;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .bottone {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}

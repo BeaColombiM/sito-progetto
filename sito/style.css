@@ -51,9 +51,6 @@ html, body{width: 100%; height: 100%;}
 .cover{position:relative;}
 
 .cover__content{
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -115,32 +112,7 @@ html, body{width: 100%; height: 100%;}
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-.autrice{
-  padding: 60px 20px;
-  background-color: black;
-  color:yellow;
-}
 
-.autrice-contenuto{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.autrice-contenuto.reverse{
-  flex-direction: row-reverse;
-}
-
-.autrice-txt{
-  flex: 1 1 500px;
-  text-align: left;
-  padding: 20px;
-}
 
 .autrice-txt h2{
   font-family: 'Harry P', sans-serif;
@@ -155,17 +127,6 @@ html, body{width: 100%; height: 100%;}
   color: yellow;
 }
 
-.autrice-img{
-  flex: 1 1 400px;
-  text-align: center;
-}
-
-.autrice-img img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
 
 
 
@@ -196,7 +157,6 @@ html, body{width: 100%; height: 100%;}
   align-items: center;
   transition: transform 0.001 ease; /* Smooth zoom effect */
 }
-
 
 .carousel-cell img{
   width: 200px;
@@ -248,4 +208,87 @@ html, body{width: 100%; height: 100%;}
 
 .footer-links li a:hover {
   color: #FFD700; 
+}
+
+.autrice {
+  padding: 60px 20px;
+  background-color: black;
+  color: yellow;
+}
+
+.autrice-contenuto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* ← Impedisce il wrap */
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.autrice-txt {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.autrice-img {
+  flex: 1;
+  text-align: right;
+}
+
+.autrice-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+@media (max-width: 600px) {
+  .info-contenuto,
+  .info-contenuto.reverse,
+  .autrice-contenuto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-txt,
+  .autrice-txt,
+  .info-img,
+  .autrice-img {
+    flex: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .info-txt h2,
+  .autrice-txt h2,
+  .benvenuto h1 {
+    font-size: 1.5em;
+  }
+
+  .carousel-cell img {
+    width: 150px;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .img-ress {
+    margin-top: 60px;
+  }
+
+  .info {
+    padding: 30px 10px;
+  }
+
+    .trama h2,
+  .trailer h2,
+  .personaggi h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .autrice {
+    padding: 30px 10px;
+  }
 }
