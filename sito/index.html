@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css">
 </head>
 <body>
+  <input type="checkbox" id="toggle-menu" class="menu-toggle">
+  
+  <label for="toggle-menu" class="menu-icon">&#9776;</label>
+
+  <nav class="side-menu">
+    <ul>
+      <li><a href="#cosharrypotter">Che cos'è Harry Potter?</a></li>
+      <li><a href="#jkrowling">Chi è J.K. Rowling?</a></li>
+      <li><a href="#menu">Menu che scorre</a></li>
+    </ul>
+    <label for="toggle-menu" class="close-menu">&rarr;</label>
+  </nav>
+
+  <header class="navbar">
+    
+  </header>
+  
 <main class="container">
     <div class="cover">
         <div>
@@ -18,7 +35,7 @@
             <h1>Benvenuto nel mondo di Harry Potter! Scorri verso il basso per trovare informazioni sulla tua saga preferita!</h1>
         </div>
     </div>
-    <div class="info">
+    <div class="info" id="cosharrypotter">
         <div class="info-contenuto">
             <div class="info-txt">
                 <h2>Che cos'è Harry Potter?</h2>
@@ -30,7 +47,7 @@
         </div>
     </div>
 
-    <div class="autrice">
+    <div class="autrice" id="jkrowling">
         <div class="autrice-contenuto">
             <div class="autrice-txt">
                 <h2>Chi è J.K. Rowling?</h2>
@@ -42,7 +59,7 @@
         </div>
         </div>
     
-    <div class="cover__content">
+    <div class="cover__content" id="menu">
         <div class="menu-txt">
             <h2 class="titolomenu"> Scegli il capitolo della saga su cui vuoi informarti</h2>
         </div>

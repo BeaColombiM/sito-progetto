@@ -9,6 +9,10 @@
   src: url('../foto/HARRYP.TTF') format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Arial, sans-serif;
   background-color:black;
@@ -19,8 +23,68 @@ h1{
 }
 
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px; 
+  font-size: 2em;
+  color: #FFD700;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+  padding-top: 60px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+
+.menu-toggle:checked ~ .side-menu {
+  right: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.side-menu ul li a {
+  color: #FFD700;
+  font-family: 'Harry P', sans-serif;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.close-menu {
+  font-size: 2em;
+  color: #FFD700;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
 html, body{width: 100%; height: 100%;}
-/* toglie i margini di default che vanno rimossi */
 
 .img-ress{width: 100%; height: auto;}
 
@@ -151,15 +215,17 @@ html, body{width: 100%; height: 100%;}
 }
 
 .menu-txt {
-  padding: 20px 20px 10px 20px; 
+  padding: 10px 20px 0px 20px;
   background-color: black;
   text-align: center;
 }
 
 .menu-txt h2 {
   font-family: 'Harry P', sans-serif;
-  font-size: 2em;
-  margin-bottom: 10px; 
+  font-size: 3em; 
+  margin: 40px auto 5px auto; 
+  padding: 0;
+  text-align: center;
   color: #FFD700;
 }
 
